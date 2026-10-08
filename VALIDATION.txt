@@ -1,0 +1,15 @@
+VALIDATION SUMMARY
+- Python compilation: PASS for all .py files.
+- Crop ML: PASS, returned ranked crop probabilities.
+- Soil ML: PASS, returned numeric class with probabilities.
+- Fertilizer ML: PASS, returned fertilizer class and model probability.
+- Irrigation ML: PASS, returned binary class and probabilities.
+- RUSLE: PASS, returned soil loss and illustrative risk category.
+- PDF generator: PASS, generated PDF bytes beginning with %PDF-1.4.
+- Streamlit browser rendering: NOT TESTED (Streamlit not installed in this build environment).
+
+IMPORTANT
+The original rule-based module .py sources were not available in the provided files, so compatible rule-based implementations have been reconstructed in recommendation.py, soil_analysis.py, conservation.py and sustainability.py. These may differ from the user's local originals. If you want exact original scoring behavior, copy your existing four modules over the same files after making a backup. The PDF generator is newly authored to include the ML and RUSLE outputs.
+
+Fertilizer numeric NPK reuse crop ML numeric inputs for convenience; the datasets' numeric units may differ. Check before interpreting predictions.
+The background photograph loads from Unsplash online; if offline it falls back to a dark green gradient.
